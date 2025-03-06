@@ -1,0 +1,78 @@
+/* Estilos para la galería */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.imagen-galeria {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.imagen-galeria:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para la lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-contenido {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar:hover {
+    color: #ccc;
+}
+
+// Seleccionar elementos
+const lightbox = document.getElementById("lightbox");
+const lightboxImagen = document.getElementById("lightbox-imagen");
+const imagenes = document.querySelectorAll(".imagen-galeria");
+const cerrar = document.querySelector(".cerrar");
+
+// Abrir lightbox al hacer clic en una imagen
+imagenes.forEach((imagen) => {
+    imagen.addEventListener("click", () => {
+        lightbox.style.display = "block";
+        lightboxImagen.src = imagen.src;
+    });
+});
+
+// Cerrar lightbox al hacer clic en la "X"
+cerrar.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});
+
+// Cerrar lightbox al hacer clic fuera de la imagen
+lightbox.addEventListener("click", (e) => {
+    if (e.target !== lightboxImagen) {
+        lightbox.style.display = "none";
+    }
+});
