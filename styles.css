@@ -1,0 +1,267 @@
+*,*::after, ::before{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.popup-imagen {
+    animation: transitionIn 0.5s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+.buttons {
+    animation: transitionIn 2s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    animation: transitionIn 2s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+
+@font-face {
+    font-family: 'mwfont'; /*a name to be used later*/
+    src: url(fuentes/Mostwasted.ttf); /*URL to font*/
+}
+
+body {
+    background-color: #000000;
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 25%);
+    text-align: center;
+}
+
+h1 {
+    font-family: mwfont;
+    color: #ffffff;
+    font-size: 250px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-shadow: 8px 8px 10px #a8a8a8b0;
+}
+
+p {
+    font-family: mwfont;
+    color: #a3a3a3;
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+@media (max-width:500px){
+    h1 {
+        font-size: 150px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width:500px){
+    p {
+        font-size: 40px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 0.5em;
+    display: block;
+    border-radius: 3%;
+}
+
+.container .gallery {
+    columns: 5 200px;
+    column-gap: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    opacity: 0.3 ease;
+}
+
+
+@media (max-width:500px){
+    .container .gallery {
+        columns: 2;
+        column-gap: 0.5em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+       
+    }
+}
+
+.container .gallery :hover {
+    transition: transform 0.2s ease-in-out;  
+    transform: scale(1.02); 
+    box-shadow: 10px 10px 10px #00000088;
+    opacity: 0.9;
+    cursor: pointer;
+    
+    
+}
+
+.container .popup-imagen {
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+    margin: 100;
+}
+
+.container .popup-imagen span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 100px;
+    font-weight: bolder;
+    color: #5e5779;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.container .popup-imagen img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 95%;
+    object-fit: scale-down;
+}
+
+@media (max-width:1000px){
+    .container .popup-imagen img{
+        width: 95%;
+        
+    }
+}
+
+.ul{
+    display: show;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buttons i{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    height: 70px; width: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 60px;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.8);
+    transition: transform .2s ease-in-out;
+    background: #fff
+
+}
+
+
+@media (max-width:500px){
+    .buttons i{
+        margin: 5px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+}
+
+
+.buttons i:hover {
+    transform: scale(1.2);
+    
+}
+
+.ul2{
+    display: show;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+
+    }
+
+.buttons2 e{
+    border-radius: 50%;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.466);
+    line-height: 35px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    height: 35px
+    }
+
+    @media (max-width:500px){
+        .buttons2 e{
+            margin: 5px;
+            margin-bottom: px;
+            margin-top: 100px;
+        }
+    }
+
+    @keyframes transitionOut {
+        from {
+            opacity: 1;
+
+        }
+        
+        to {
+            opacity: 0;
+            
+        }
+    }
+
+footer {
+    margin-bottom: 50px;
+    font-family:sans-serif;
+    color: rgba(0, 0, 0, 0.466);
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 600px;
+    margin-right: 600px;
+}
+    
+@media (max-width:500px){
+    footer {
+        margin-bottom: 30px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
