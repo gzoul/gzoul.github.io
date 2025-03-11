@@ -127,6 +127,7 @@ h1 {
 }
 
 p {
+    border: 5px #000000;
     font-family: mwfont;
     color: #9c9c9c;
     font-size: 60px;
