@@ -6,10 +6,6 @@
 
 }
 
-.gallery {
-    display: d;
-}
-
 .popup-imagen {
     animation: transitionIn 0.5s;
 }
@@ -52,7 +48,6 @@
     }
 }
 
-
 @font-face {
     font-family: 'mwfont'; /*a name to be used later*/
     src: url(fuentes/Mostwasted.ttf); /*URL to font*/
@@ -74,7 +69,6 @@ h1 {
     margin-bottom: 0px;
     text-shadow: 8px 8px 10px #a8a8a8b0;
 }
-
 
 @media (max-width:1000px){
     h1 {
@@ -147,7 +141,7 @@ img {
     margin-bottom: 0.5em;
     display: block;
     border-radius: 3%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(26, 112, 151);
 }
 
 .panes {
@@ -160,7 +154,6 @@ img {
     column-gap: 0.5em;
     margin-left: 1em;
     margin-right: 1em;
-    opacity: 0.3 ease;
 }
 
 @media (max-width:1000px){
@@ -235,7 +228,6 @@ img {
     text-shadow: 5px 5px 5px #a3a3a3;
 }
 
-
 .buttons i{
     font-size: 25px;
     color: rgb(0, 0, 0);
@@ -252,7 +244,6 @@ img {
 
 }
 
-
 @media (max-width:500px){
     .buttons i{
         margin: 5px;
@@ -261,14 +252,12 @@ img {
     }
 }
 
-
 .buttons i:hover {
     transform: scale(1.2);
     
 }
 
 .ul2{
-    display: show;
     text-align: center;
     align-items: center;
     justify-content: space-around;
@@ -343,15 +332,14 @@ h5 {
 
 .magnifier {
     position: absolute;
-    width: 150px; /* Tamaño del círculo de la lupa */
+    width: 150px; 
     height: 150px;
-    border: 2px solid #fff; /* Borde del círculo */
-    border-radius: 50%; /* Forma circular */
+    border: 2px solid #fff;
+    border-radius: 50%;
     background-repeat: no-repeat;
-    background-size: 300% 300%; /* Aumenta el tamaño de la imagen dentro de la lupa */
-    pointer-events: none; /* Evita que la lupa interfiera con el cursor */
-    display: none; /* Oculta la lupa por defecto */
-    z-index: 300; /* Asegúrate de que esté por encima de todo */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para mejor visibilidad */
+    background-size: 300% 300%; 
+    pointer-events: none; 
+    display: none;
+    z-index: 300; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
