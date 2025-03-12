@@ -51,6 +51,9 @@
 @font-face {
     font-family: 'mwfont'; /*a name to be used later*/
     src: url(fuentes/Mostwasted.ttf); /*URL to font*/
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Aplicar font-display: swap */
 }
 
 body {
