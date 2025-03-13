@@ -81,13 +81,3 @@ lightboxImg.addEventListener("mouseleave", () => {
 document.fonts.load('1em mwfont').then(() => {
     document.body.classList.add('font-loaded');
   });
-
-  window.addEventListener('load', function() {
-  // Ocultar el círculo de carga
-  const loading = document.getElementById('loading');
-  loading.style.display = 'none';
-
-  // Mostrar el contenido de la página
-  const content = document.getElementById('content');
-  content.style.display = 'block';
-});
