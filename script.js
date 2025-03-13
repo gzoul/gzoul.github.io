@@ -83,16 +83,11 @@ document.fonts.load('1em mwfont').then(() => {
   });
 
   window.addEventListener('load', function() {
-    // Ocultar el círculo de carga
-    const loading = document.getElementById('loading');
-    loading.style.opacity = '0';
-  
-    // Esperar 0.5 segundos antes de ocultar completamente el círculo de carga
-    setTimeout(() => {
-      loading.style.display = 'none';
-  
-      // Mostrar el contenido de la página después de ocultar el círculo de carga
-      const content = document.getElementById('content');
-      content.style.display = 'block';
-    }, 500); // 500 ms = 0.5 segundos
-  });
+  // Ocultar el círculo de carga
+  const loading = document.getElementById('loading');
+  loading.style.display = 'none';
+
+  // Mostrar el contenido de la página
+  const content = document.getElementById('content');
+  content.style.display = 'block';
+});
